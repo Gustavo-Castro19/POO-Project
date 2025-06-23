@@ -19,12 +19,12 @@ public class App {
         List<Furniture> furnitureList = new ArrayList<>();
         List<Hortifruti> hortiList = new ArrayList<>();
 
-        electronicList.add(new Electronics("galax A21s", 1200.00, 11, "Samsung", "Samsung", "A21s", 2020));
-        electronicList.add(new Electronics("Smart TV Philco 43”", 1387.15, 5, "Philco", "Philco", "099433039", 2024));
-        furnitureList.add(new Furniture("Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10));
-        furnitureList.add(new Furniture("Cadeira", 350.99, 8, 55.00, 42.50,"Plástico e Metal", 2023));
-        hortiList.add(new Hortifruti("Banana", 5.00, 35, 100));
-        hortiList.add(new Hortifruti("Maça", 3.99, 30, 110));
+        // electronicList.add(new Electronics(1, "galax A21s", 1200.00, 11, "Samsung", "Samsung", "A21s", 2020));
+        // electronicList.add(new Electronics(2, "Smart TV Philco 43”", 1387.15, 5, "Philco", "Philco", "099433039", 2024));
+        // furnitureList.add(new Furniture(3, "Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10));
+        // furnitureList.add(new Furniture(4, "Cadeira", 350.99, 8, 55.00, 42.50,"Plástico e Metal", 2023));
+        // hortiList.add(new Hortifruti(5, "Banana", 5.00, 35, 100));
+        hortiList.add(new Hortifruti(6, "Maça", 3.99, 30, 110));
 
         do{
             info_options();

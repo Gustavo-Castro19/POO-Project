@@ -4,15 +4,13 @@ public class Furniture extends Product {
     private double height;
     private double width;
     private String material;
-    private int age;
 
-    public Furniture(String name, double price, int quantity, double height, double width, String material, int age) {
-        super(name, price, quantity);
+    public Furniture(int idPro, String name, double price, int quantity, double height, double width, String material) {
+        super(idPro, name, price, quantity);
         try{
             this.height = height;
             this.width = width;
             this.material = material;
-            this.age = age;
         }catch(IllegalArgumentException e){
             System.err.println("Input Furniture() values is invalid: " + e.getMessage());
         }
@@ -26,18 +24,12 @@ public class Furniture extends Product {
     }
     public String getMaterial() {
         return material;
-    }
-    public int getAge() {
-        return age;
-    }
-
-    @Override
+    }    @Override
     public void exhibitionProductsData() {
         super.exhibitionProductsData();
         System.out.println("Material: " + getMaterial());
         System.out.println("size:(" + String.format("%.1f", getWidth()) +
                 "x" + String.format("%.1f", getHeight()) + ")m");
-        System.out.println("age: " + getAge());
     }
 
 }

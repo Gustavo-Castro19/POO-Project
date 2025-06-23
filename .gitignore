@@ -76,7 +76,7 @@ bin/
 
 # Environment-specific files
 .env
-*.properties
+
 
 # System files
 .DS_Store

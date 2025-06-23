@@ -4,8 +4,8 @@ public class Hortifruti extends Product {
     private double MiddleWeight;
     private double TotalWeight;
 
-    public Hortifruti(String name, double price, int quantity, double MiddleWeight) {
-        super(name, price, quantity);
+    public Hortifruti(int idPro ,String name, double price, int quantity, double MiddleWeight) {
+        super(idPro, name, price, quantity);
         this.MiddleWeight = MiddleWeight;
         if(MiddleWeight != (int)MiddleWeight){
             throw new IllegalArgumentException("Wight value is invalid.");
@@ -29,6 +29,7 @@ public class Hortifruti extends Product {
         System.out.println("Nome do produto: " + name);
         System.out.println("Valor por kg R$ : " + price);
         System.out.println("Peso total: " + TotalWeight + "kg");
-        System.out.println("Valor total R$: " + (TotalWeight * price));
+        System.out.printf("Valor total R$: %.2f\n", (TotalWeight * price));
+        // System.out.println("Valor total R$: " + (TotalWeight * price));
     }
 }
